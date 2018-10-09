@@ -1,0 +1,39 @@
+{% load static %}
+<html>
+
+<head>
+    <title>List Buku</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="header-container">
+        <ul>
+            <li class="header-name">
+                <a>Medium</a>
+            </li>
+            <li>
+                <a href="/">Home</a>
+            </li>
+        </ul>
+    </div>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="username" />
+                <input type="password" placeholder="password" onChange={this.onChangePassword} value={password} />
+                <div>
+                    <button onClick={this.doLogin}>Login</button>
+                    <p>
+                        Not have an account?
+                        <a href="javascript:void(0)" onClick={this.changeMode}>
+                            Create an account
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

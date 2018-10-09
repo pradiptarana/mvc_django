@@ -9,6 +9,7 @@ class Post(models.Model):
         default=timezone.now)
     published_date = models.DateTimeField(
         blank=True, null=True)
+    topic = models.ForeignKey('Topic', null=True)
 
     def publish(self):
         self.published_date = timezone.now
@@ -16,3 +17,10 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class Topic(models.Model):
+    topic_name = models.CharField(max_length=200)
+    hashtag = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.topic_name

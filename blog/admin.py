@@ -1,4 +1,8 @@
 from django.contrib import admin
-from models import Post
+from models import Post, Topic
 
-admin.site.register(Post)
+class PostAdmin(admin.ModelAdmin):
+    list_display = ('title', 'topic')
+
+admin.site.register(Post, PostAdmin)
+admin.site.register(Topic)

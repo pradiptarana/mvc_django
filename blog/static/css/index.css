@@ -1,0 +1,112 @@
+/*
+	Created by: Ekky
+	Layout utama pada page ini terdiri dari:
+	- Global styling*
+	- Header
+	- Content
+	- Footer
+*/
+
+/* ----- Begin: Global Styling ----- */
+body {
+  margin: 0;
+  background: #e3e3e3;
+}
+a {
+  color: #0010d0;
+}
+h1 {
+  font-family: "Arial";
+}
+.highlight {
+  font-weight: bold;
+  color: #9a0101;
+}
+/* ----- End: Global Styling ----- */
+
+/* ----- Begin: Header ----- */
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+
+  padding: 25px;
+  font-family: "Tahoma";
+
+  background: #aa0000;
+  color: #fff;
+}
+/* global style on header */
+#header p {
+  margin: 0;
+}
+#header a {
+  text-decoration: none;
+  color: #fff;
+}
+#header a.active {
+  text-decoration: underline;
+}
+
+#header .header-logo {
+  font-size: 32px;
+}
+#header .header-nav {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 29px;
+}
+#header .header-nav ul {
+  list-style: none;
+  margin: 0;
+}
+#header .header-nav ul li {
+  display: inline-block;
+  margin: 5px;
+}
+/* ----- End: Header ----- */
+
+/* ----- Begin: Content ----- */
+#content {
+  margin-top: 89px;
+}
+#content .about-me {
+  padding: 50px 30px;
+  text-align: center;
+}
+#content .my-hobby,
+#content .my-education {
+  background: #fff;
+  padding: 30px;
+}
+
+/* global style on content */
+#content h1 {
+  margin: 0;
+}
+#content h1.custom-title {
+  color: #0010d0;
+}
+#content ul li,
+#content ol li {
+  margin-bottom: 10px;
+}
+#content ol li {
+  font-weight: bold;
+}
+#content ol li span {
+  font-style: italic;
+  font-weight: normal;
+}
+/* ----- End: Content ----- */
+
+/* ----- Begin: Footer ----- */
+#footer {
+  text-align: center;
+}
+/* ----- End: Footer ----- */
