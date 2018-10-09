@@ -9,7 +9,7 @@ class Post(models.Model):
         default=timezone.now)
     published_date = models.DateTimeField(
         blank=True, null=True)
-    topic = models.ForeignKey('Topic', null=True)
+    topic = models.ForeignKey('Topic', null=True, on_delete= models.CASCADE)
 
     def publish(self):
         self.published_date = timezone.now
